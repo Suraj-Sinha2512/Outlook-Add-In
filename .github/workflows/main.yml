@@ -1,7 +1,10 @@
 # File: .github/workflows/workflow.yml
 
 on: [push]
-
+permissions:
+  id-token: write
+  contents: read
+  
 name: Run Azure Login without subscription
 
 jobs:
